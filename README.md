@@ -311,6 +311,8 @@ Serialize a Javascript object using a predefined Buffer and index into the buffe
 | [options.fieldsAsRaw] | <code>Object</code> | <code></code> | allow to specify if there what fields we wish to return as unserialized raw buffer. |
 | [options.bsonRegExp] | <code>Object</code> | <code>false</code> | return BSON regular expressions as BSONRegExp instances. |
 | [options.allowObjectSmallerThanBufferSize] | <code>boolean</code> | <code>false</code> | allows the buffer to be larger than the parsed BSON object |
+| [options.arrayClass] | <code>constructor</code> | <code>undefined</code> | ES6 class constructed when deserializeing an Array instead of [] |
+| [options.arrayObject] | <code>constructor</code> | <code>undefined</code> | ES6 class constructed when deserializing an Object instead of {} |
 
 Deserialize data as BSON.
 
